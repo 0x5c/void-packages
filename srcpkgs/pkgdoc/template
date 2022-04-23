@@ -1,0 +1,17 @@
+# Template file for 'pkgdoc'
+pkgname=pkgdoc
+version=1.0.1
+revision=1
+short_desc="Find documentation/examples/licences for packages"
+maintainer="0x5c <dev@0x5c.io>"
+license="MIT"
+homepage="https://github.com/0x5c/pkgdoc"
+distfiles="https://github.com/0x5c/pkgdoc/archive/refs/tags/v${version}.tar.gz"
+checksum=08e54dd3985b481f79b31a4ccd48cbeca3e1be40fdcc7be23ba1670d70790556
+
+
+do_install() {
+    vbin pkgdoc
+    vcompletion completions/_pkgdoc.zsh zsh pkgdoc
+    vlicense LICENCE
+}
