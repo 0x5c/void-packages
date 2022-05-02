@@ -1,6 +1,6 @@
 # Template file for 'helvum'
 pkgname=helvum
-version=0.3.4
+version=0.3.5
 revision=2
 build_style=cargo
 hostmakedepends="pkg-config clang libclang"
