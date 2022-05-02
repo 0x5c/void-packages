@@ -12,6 +12,9 @@ disffiles="https://github.com/ecki/net-tools/archive/${_githash}.tar.gz"
 checksum=795cb4dd2618ed7ff9a48b9cb63b33780b47dfd7464c8e52ba734e6796cbab17
 pkgname=net-tools
 
+
+
+
 alternatives="
  ifconfig:ifconfig:/usr/bin/${pkgname}-ifconfig
  ifconfig:/usr/share/man/man1/ifconfig.1:/usr/share/man/man8/${pkgname}-ifconfig.8
