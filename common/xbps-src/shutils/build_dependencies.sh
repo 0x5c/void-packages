@@ -406,8 +406,8 @@ install_pkg_deps() {
 
     if [[ ${host_binpkg_deps} ]]; then
         if [ -z "$XBPS_QUIET" ]; then
-            # normal messages in bold
-            [[ $NOCOLORS ]] || printf "\033[1m"
+            # normal messages in bright bold white
+            [[ $NOCOLORS ]] || printf "\033[97;1m"
             echo "=> $pkgver: installing host dependencies: ${host_binpkg_deps[@]} ..."
             [[ $NOCOLORS ]] || printf "\033[m"
         fi
@@ -416,8 +416,8 @@ install_pkg_deps() {
 
     if [[ ${binpkg_deps} ]]; then
         if [ -z "$XBPS_QUIET" ]; then
-            # normal messages in bold
-            [[ $NOCOLORS ]] || printf "\033[1m"
+            # normal messages in bright bold white
+            [[ $NOCOLORS ]] || printf "\033[97;1m"
             echo "=> $pkgver: installing target dependencies: ${binpkg_deps[@]} ..."
             [[ $NOCOLORS ]] || printf "\033[m"
         fi

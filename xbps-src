@@ -474,6 +474,8 @@ fi
 # Read settings from config file
 [ -s "$XBPS_CONFIG_FILE" ] && . $XBPS_CONFIG_FILE &>/dev/null
 
+[ -n "${XBPS_FORCE_COLORS}" ] && export -n NOCOLORS=''
+
 # Set options passed on command line, after configuration files have been read
 [ -n "$XBPS_ARG_BUILD_ONLY_ONE_PKG" ] && XBPS_BUILD_ONLY_ONE_PKG=yes
 [ -n "$XBPS_ARG_IGNORE_BROKENNESS" ] && XBPS_IGNORE_BROKENNESS=1
