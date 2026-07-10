@@ -1,0 +1,12 @@
+# Template file for 'lifutils'
+pkgname=lifutils
+version=2.0.2
+revision=1
+build_style=cmake
+short_desc="Utilites for Hewlett Packard LIF files"
+maintainer="0x5c <dev@0x5c.io>"
+license="GPL-2.0-only"
+homepage="https://github.com/bug400/lifutils"
+changelog="https://github.com/bug400/lifutils/raw/refs/heads/master/debian/changelog"
+distfiles="https://github.com/bug400/lifutils/archive/refs/tags/v${version}.tar.gz"
+checksum=c7ea2b9a91dd40d1a9fd3c407df4f8d197151a08d24639515cce4f3fefdd12b8

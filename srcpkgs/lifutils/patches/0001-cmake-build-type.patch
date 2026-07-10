@@ -1,0 +1,10 @@
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -31,7 +31,6 @@
+ #
+ # set build type = Release
+ #
+-set(CMAKE_BUILD_TYPE "Release")
+ #set(CMAKE_BUILD_TYPE "Debug")
+ #
+ # Install Prefix
